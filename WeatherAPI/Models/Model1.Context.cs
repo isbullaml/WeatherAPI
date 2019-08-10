@@ -19,7 +19,6 @@ namespace WeatherAPI.Models
             : base("name=WeatherIOTEntities4")
         {
         }
-    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
