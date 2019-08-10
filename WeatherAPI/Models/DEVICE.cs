@@ -17,5 +17,7 @@ namespace WeatherAPI.Models
         public int Id { get; set; }
         public int Location_Id { get; set; }
         public int Type { get; set; }
+
+
     }
 }
