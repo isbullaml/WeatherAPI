@@ -13,10 +13,10 @@ namespace WeatherAPI.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class WeatherIOTEntities : DbContext
+    public partial class WeatherIOTEntities4 : DbContext
     {
-        public WeatherIOTEntities()
-            : base("name=WeatherIOTEntities")
+        public WeatherIOTEntities4()
+            : base("name=WeatherIOTEntities4")
         {
         }
     
@@ -25,8 +25,8 @@ namespace WeatherAPI.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<DEVICE> DEVICEs { get; set; }
-        public virtual DbSet<LOCATION> LOCATIONs { get; set; }
-        public virtual DbSet<WEATHER_DATA> WEATHER_DATA { get; set; }
+        public virtual DbSet<Device> Devices { get; set; }
+        public virtual DbSet<Location> Locations { get; set; }
+        public virtual DbSet<Weather_Data> Weather_Data { get; set; }
     }
 }

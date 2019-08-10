@@ -12,22 +12,11 @@ namespace WeatherAPI.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class LOCATION
+    public partial class Location
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public LOCATION()
-        {
-            this.DEVICEs = new HashSet<DEVICE>();
-        }
-    
-        public int ID { get; set; }
-        public string CITY { get; set; }
-        public string AREA { get; set; }
-        public string COUNTRY { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DEVICE> DEVICEs { get; set; }
-        public virtual LOCATION LOCATION1 { get; set; }
-        public virtual LOCATION LOCATION2 { get; set; }
+        public int Id { get; set; }
+        public string City { get; set; }
+        public string Area { get; set; }
+        public string Country { get; set; }
     }
 }

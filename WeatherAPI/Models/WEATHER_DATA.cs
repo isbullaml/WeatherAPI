@@ -12,13 +12,11 @@ namespace WeatherAPI.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class WEATHER_DATA
+    public partial class Weather_Data
     {
-        public int ID { get; set; }
-        public byte[] TIME_STAMP { get; set; }
-        public int DEIVCE_ID { get; set; }
-        public string DATA { get; set; }
-    
-        public virtual DEVICE DEVICE { get; set; }
+        public int Id { get; set; }
+        public int Device_Id { get; set; }
+        public byte[] Time_Stamp { get; set; }
+        public string Data { get; set; }
     }
 }

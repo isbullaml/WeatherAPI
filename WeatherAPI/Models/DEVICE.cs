@@ -12,20 +12,10 @@ namespace WeatherAPI.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class DEVICE
+    public partial class Device
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public DEVICE()
-        {
-            this.WEATHER_DATA = new HashSet<WEATHER_DATA>();
-        }
-    
-        public int ID { get; set; }
-        public int LOCATION_ID { get; set; }
-        public int TYPE { get; set; }
-    
-        public virtual LOCATION LOCATION { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<WEATHER_DATA> WEATHER_DATA { get; set; }
+        public int Id { get; set; }
+        public int Location_Id { get; set; }
+        public int Type { get; set; }
     }
 }
